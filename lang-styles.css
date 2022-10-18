@@ -20,6 +20,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.container h1{
+    font-style: normal;
+}
 .enter-en{
     text-decoration: none;
     color: rgb(131, 227, 23);
