@@ -281,6 +281,7 @@ form input{
   }
   nav {
     padding-bottom: 0;
+    background-color: black;
   }
   nav a {
     font-size: 17px;
