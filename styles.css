@@ -338,6 +338,7 @@ form input{
   }
   .container-c {
     font-size: 20px;
+    height: auto;
   }
   .container-c p {
     width: 90%;
