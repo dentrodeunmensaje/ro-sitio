@@ -28,7 +28,7 @@
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 .container a {
   text-decoration: none;
@@ -48,9 +48,9 @@ body {
   padding: 0;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   height: auto;
-  margin-left: 70%;
+  text-align: end;
 }
 .main-title {
   margin: 0;
@@ -134,17 +134,57 @@ nav article h1 {
   color: rgb(131, 227, 23);
 }
 .image {
-  margin: 0;
-  padding: 0;
+  margin: 50px;
+  padding: 5px;
   position: relative;
-  width: 33%;
+  width: 25%;
   height: auto;
   background-color: #000;
   color: #fff;
   border-radius: 50%;
-  border: 4px solid #fff;
-  margin-left: 33%;
-  margin-top: 0;
+  border: 8px solid #fff;
+  margin-left: 10%;
+  margin-top: 50px;
+  display: inline-block;
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.image-side{
+  display: inline-block;
+  width: 15%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
 }
 
 .project-image {
@@ -219,13 +259,18 @@ form input{
 .container a{
   font-size: 20px;
 }
+.container-c a{
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(131, 227, 23);
+}
 
 @media screen and (max-width: 800px) {
   body {
     font-size: 14px;
   }
   .nav-container {
-    margin-left: 20%;
+    margin-left: 0;
   }
 }
 
@@ -234,12 +279,10 @@ form input{
     font-size: 11px;
   }
   .nav-container {
-    margin-left: 10%;
-    margin-top: 2%;
-    padding-top: 2%;
+    text-align: end;
   }
   nav {
-    padding-bottom: 5%;
+    padding-bottom: 0;
   }
   nav a {
     font-size: 17px;
@@ -248,7 +291,7 @@ form input{
     font-size: 1.7rem;
   }
   .space {
-    height: 10%;
+    height: 7%;
   }
   .container {
     padding-top: 10%;
@@ -294,5 +337,17 @@ form input{
   }
   h2 {
     font-size: 1.5rem;
+  }
+  .container-c {
+    font-size: 20px;
+  }
+  .container-c p {
+    width: 90%;
+  }
+  .menu a{
+    font-size: 18px;
+  }
+  .image-side{
+    display: none;
   }
 }
