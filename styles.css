@@ -1,353 +1,140 @@
-.container {
-  width: 100%;
-  height: auto;
-  position: relative;
-  color: aliceblue;
-  margin: 0;
-  padding: 0;
-  background-image: url("./files/fondo3.jpg");
-  padding-left: 20px;
-  padding-top: 20px;
-}
-.container-c{
-  width: 100%;
-  height: 80%;
-  position: relative;
-  color: aliceblue;
-  margin: 0;
-  padding: 0;
-  background-image: url("./files/fondo3.jpg");
-  padding-left: 20px;
-  padding-top: 20px;
-}
-.container p {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 0;
-  padding: 10px;
-}
-.container a {
-  text-decoration: none;
-  color: rgb(131, 227, 23);
-}
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif, Arial, sans-serif;
-  background-color: #000;
-}
-.menu {
-  margin: 0;
-  padding: 0;
-}
-.nav-container {
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: auto;
-  text-align: end;
-}
-.main-title {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-.space {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  width: 100%;
-  height: 10%;
-  background-color: #000;
-}
-nav {
-  position: fixed;
-  top: 0px;
-  background-image: url("./files/fondo1.jpg");
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  text-decoration: none;
-  font-size: 1.5em;
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-nav a.active {
-  color: rgb(227, 23, 213);
-  background: white;
+/* Container Styles */
+.container, .container-c {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Paragraph and Link Styles */
+.container p, .container-c p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container a, .container-c a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+.container a:hover, .container-c a:hover {
+  color: #0056b3;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 1em;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: rgb(131, 227, 23);
-  background: #1e1e1e;
-  padding: 3px;
+  color: #007BFF;
 }
 
-nav a:visited {
-  color: rgb(227, 23, 213);
+.main-title {
+  margin: 20px;
+  font-size: 1.8rem;
+  color: #333;
 }
 
-div {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 2rem;
-  font-weight: normal;
-  color: rgb(227, 23, 213);
-}
-
+/* Footer Styles */
 footer {
-  margin: 0;
-  padding: 0;
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
   position: relative;
   width: 100%;
-  height: 5%;
-  background-color: #000;
 }
 
 footer p {
   margin: 0;
-  padding: 0;
-  position: relative;
+  font-size: 14px;
+}
+
+/* Image Styles */
+.image, .project-image, .book-image {
   width: 100%;
+  max-width: 300px;
   height: auto;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-}
-
-nav article h1 {
-  color: rgb(131, 227, 23);
-}
-.image {
-  margin: 50px;
-  padding: 5px;
-  position: relative;
-  width: 25%;
-  height: auto;
-  background-color: #000;
-  color: #fff;
-  border-radius: 50%;
-  border: 8px solid #fff;
-  margin-left: 10%;
-  margin-top: 50px;
-  display: inline-block;
-}
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.image-side{
-  display: inline-block;
-  width: 15%;
-  margin-left: 10%;
-  margin-bottom: 10%;
-  -webkit-animation: rotating 20s linear infinite;
-  -moz-animation: rotating 20s linear infinite;
-  -ms-animation: rotating 20s linear infinite;
-  -o-animation: rotating 20s linear infinite;
-  animation: rotating 20s linear infinite;
-}
-
-.project-image {
-  width: 25%;
-  height: auto;
-  border-radius: 50%;
-  border: 4px solid #fff;
-}
-.project-image:hover {
-  border: 4px solid rgb(131, 227, 23);
-}
-.project {
-  width: 33%;
-  height: auto;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-.language {
-  width: auto;
-  height: 124px;
-}
-.languages {
-  width: 80%;
-  margin: auto;
-}
-.book {
-  width: 30%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  margin-top: 3px;
-  display: inline-block;
-}
-
-.book-image {
-  width: 250px;
-  height: auto;
+  margin: 20px auto;
+  display: block;
   border-radius: 5px;
-  border: 4px solid #fff;
-}
-.book-image:hover {
-  border: 4px solid rgb(131, 227, 23);
 }
 
+.image:hover, .project-image:hover, .book-image:hover {
+  opacity: 0.8;
+}
+
+/* Button Styles */
 button {
-  background-color: #767373;
-  color: rgb(136, 255, 0);
-  border: 2px solid rgb(136, 255, 0);
-  border-radius: 5px;
-  font-size: 20px;
-}
-button:hover{
-  background-color: #767373;
-  color: rgb(136, 255, 0);
-  border: 4px solid rgb(136, 255, 0);
-}
-label{
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-form{
-  margin: 0;
-}
-form input{
-  font-size: 20px;
-}
-.container a{
-  font-size: 20px;
-}
-.container-c a{
-  font-size: 20px;
-  text-decoration: none;
-  color: rgb(131, 227, 23);
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
 @media screen and (max-width: 800px) {
   body {
     font-size: 14px;
   }
-  .nav-container {
-    margin-left: 0;
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 11px;
-  }
-  .nav-container {
-    text-align: end;
-  }
-  nav {
-    padding-bottom: 0;
-    background-color: black;
-  }
   nav a {
-    font-size: 17px;
+    display: block;
+    margin: 5px 0;
   }
+
+  .container, .container-c {
+    padding: 10px;
+  }
+
   .main-title {
-    font-size: 1.7rem;
-  }
-  .space {
-    height: 17%;
-  }
-  .container {
-    padding-top: 10%;
-    height: auto;
-  }
-  .languages {
-    width: 80%;
-    height: auto;
-  }
-  .language {
-    margin: auto;
-    align-self: auto;
-    height: 100px;
-    width: auto;
-  }
-  .image {
-    width: 80%;
-    margin-left: 5%;
-  }
-  .container p {
     font-size: 1.2rem;
-    width: 95%;
-    margin-left: 0;
-  }
-  .project {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-  .project h2 {
-    font-size: 1.5rem;
-  }
-  .book {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10%;
-  }
-  .book-image {
-    margin-left: 15%;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  .container-c {
-    font-size: 20px;
-    height: auto;
-  }
-  .container-c p {
-    width: 90%;
-  }
-  .menu a{
-    font-size: 18px;
-  }
-  .image-side{
-    display: none;
   }
 }
